@@ -10,7 +10,6 @@
 
 The immigration data trends on H1B(H-1B, H-1B1, E-3) visa application processing over the past years can be studied by analyzing the data  available from the US Department of Labor and its [Office of Foreign Labor Certification Performance Data](https://www.foreignlaborcert.doleta.gov/performancedata.cfm#dis). There are ready-made reports available for [2018](https://www.foreignlaborcert.doleta.gov/pdf/PerformanceData/2018/H-1B_Selected_Statistics_FY2018_Q4.pdf) and [2017](https://www.foreignlaborcert.doleta.gov/pdf/PerformanceData/2017/H-1B_Selected_Statistics_FY2017.pdf), but the site doesn’t have them for past years. Here I present a mechanism to analyze past years data and calculate two metrics: **Top 10 Occupations** and **Top 10 States** for **certified** visa applications.
 
-Your code should be modular and reusable for future. If the newspaper gets data for the year 2019 (with the assumption that the necessary data to calculate the metrics are available) and puts it in the `input` directory, running the `run.sh` script should produce the results in the `output` folder without needing to change the code.
 
 # Input Dataset
 
@@ -47,7 +46,7 @@ Each line of the `top_10_states.txt` file will contain these fields in this orde
 
 The records in this file are sorted by __`NUMBER_CERTIFIED_APPLICATIONS`__ field, and in case of a tie, alphabetically by __`TOP_STATES`__. 
 
-Depending on the input (e.g., see the example below), there may be fewer than 10 lines in each file. However, there will not be more than 10 lines in each file. In case of ties, only list the top 10 based on the sorting instructions given above. Percentages are rounded off to 1 decimal place. 
+Depending on the input (e.g., see the example below), there may be fewer than 10 lines in each file. However, there will not be more than 10 lines in each file. In case of ties, only the top 10 based on the sorting instructions will be listed. Percentages are rounded off to 1 decimal place. 
 
 
 # Repo directory structure
