@@ -46,7 +46,7 @@ Each line of the `top_10_states.txt` file will contain these fields in this orde
 
 The records in this file are sorted by __`NUMBER_CERTIFIED_APPLICATIONS`__ field, and in case of a tie, alphabetically by __`TOP_STATES`__. 
 
-Depending on the input (e.g., see the example below), there may be fewer than 10 lines in each file. However, there will not be more than 10 lines in each file. In case of ties, only the top 10 based on the sorting instructions will be listed. Percentages are rounded off to 1 decimal place. 
+Depending on the input, there may be fewer than 10 lines in each file. However, there will not be more than 10 lines in each file. In case of ties, only the top 10 based on the sorting instructions will be listed. Percentages are rounded off to 1 decimal place. 
 
 
 # Repo directory structure
